@@ -30,9 +30,9 @@ export default function App() {
         setVisible={setVisible}
       />
       <Routes>
-        <Route path="/" element={<Home items={items} />} />
+        <Route path="/Shopping-Cart/" element={<Home items={items} />} />
         <Route
-          path="/shop"
+          path="/Shopping-Cart/shop"
           element={
             <Shop
               setVisible={setVisible}
@@ -44,7 +44,7 @@ export default function App() {
           }
         />
         <Route
-          path="/shop/:id"
+          path="/Shopping-Cart/shop/:id"
           element={
             <Item
               items={items}

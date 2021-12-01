@@ -87,10 +87,10 @@ export default function SearchShop({
                     color: isActive ? "red" : "",
                   };
                 }}
-                to={`/shop/${item.id}`}
+                to={`/Shopping-Cart/shop/${item.id}`}
               >
                 <div className="image-container" key={item.id}>
-                  <Link to={`/shop/${item.id}`}>
+                  <Link to={`/Shopping-Cart/shop/${item.id}`}>
                     <img
                       src={require(`${item.imgSource}`).default}
                       alt={item.name}
