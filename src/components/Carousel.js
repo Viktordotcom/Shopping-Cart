@@ -19,7 +19,7 @@ class DemoCarousel extends Component {
       >
         {this.items.map((item) => (
           <div key={item.id}>
-            <img src={item.imgSource} alt="card" />
+            <img src={require(`${item.imgSource}`).default} alt="card" />
             <h1 className="legend">
               {item.price}$ {item.name}
             </h1>

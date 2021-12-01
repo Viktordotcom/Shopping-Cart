@@ -91,7 +91,10 @@ export default function SearchShop({
               >
                 <div className="image-container" key={item.id}>
                   <Link to={`/shop/${item.id}`}>
-                    <img src={item.imgSource} alt={item.name}></img>
+                    <img
+                      src={require(`${item.imgSource}`).default}
+                      alt={item.name}
+                    ></img>
                   </Link>
                   <p>{item.name}</p>
                   <h2>{item.price}$</h2>

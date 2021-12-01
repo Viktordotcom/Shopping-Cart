@@ -13,7 +13,10 @@ const Cart = ({ visible, setVisible, itemsInCart, setItemsInCart }) => {
             );
             return (
               <div className="image-container" key={item.id}>
-                <img src={item.imgSource} alt={item.name}></img>
+                <img
+                  src={require(`${item.imgSource}`).default}
+                  alt={item.name}
+                ></img>
                 <p>{item.name}</p>
 
                 <div className="cart-inputs">

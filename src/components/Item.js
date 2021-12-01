@@ -15,7 +15,10 @@ export default function Item({
           item.id === params.id && (
             <div className="item" key={item.id}>
               <h3>{item.name}</h3>
-              <img src={item.imgSource} alt={item.name}></img>
+              <img
+                src={require(`${item.imgSource}`).default}
+                alt={item.name}
+              ></img>
               <div className="item-content">
                 <p>
                   <strong>About this item:</strong>
